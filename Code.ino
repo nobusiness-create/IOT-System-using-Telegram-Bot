@@ -5,24 +5,22 @@
 
 #include <TelegramCertificate.h>
 #include <UniversalTelegramBot.h>
-#include <Wifi.h>
+#include <WiFi.h>
 #include <WiFiClientSecure.h>
-
-//Creating Library related variables
 
 const char* ssid ="Place ur wifi network ssid here:";
 const char* password="Add your password here";
 
-#define BOTtoken ""
-#define CHAT_ID ""
+#define BOTtoken "BOT TOKEN"
+#define CHAT_ID "CHat ID"
 
 WiFiClientSecure client;
 UniversalTelegramBot bot(BOTtokenValue,client);
 
-const int mSensor=12;//Pin number for motion sensor
-const int TempSensor=34; //Pin number for temp sensor
+const int mSensor=12;
+const int TempSensor=34; 
 
-bool mDetected=false; //to indicate if motion is detected
+bool mDetected=false; 
 
 void IRAM_ATTAR movementdetection(){
   Serial.println("Motion has been detected!");
@@ -63,7 +61,7 @@ void loop() {
     Serial.println("Message succesfully sent!");
    }
    else{
-    Serial.prinln("Message wasn't sent!");
+    Serial.println("Message wasn't sent!");
    }
     mDetected=false;
   }
