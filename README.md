@@ -52,8 +52,4 @@ Upon detecting motion or reading temperature data, the microcontroller communica
 
 ![Circuit Digram](Circuit.png)
 
-## Project Structure
 
-```text
-├── esp32_telegram_bot.ino
-├── README.md
