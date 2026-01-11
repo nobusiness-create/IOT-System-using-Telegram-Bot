@@ -1,8 +1,8 @@
-#IoT Alert System Using Telegram Bot
+# IoT Alert System Using Telegram Bot
 
 This system integrates motion detection and temperature monitoring to demonstrate practical IoT communication.
 ---
-##Abstract
+## Abstract
 This project presents the design and implementation of an ESP32-based IoT alert system capable of sending real-time notifications through Telegram.
 By integrating a PIR motion sensor and a temperature sensor, the system enables monitoring and instant alerts, making it suitable for security and environmental monitering applications.
 ---
