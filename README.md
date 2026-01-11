@@ -50,7 +50,7 @@ Upon detecting motion or reading temperature data, the microcontroller communica
 
 ## Circuit Diagram
 
-![Circuit Digram](circuit.png)
+![Circuit Digram](Circuit.png)
 
 ## Project Structure
 
