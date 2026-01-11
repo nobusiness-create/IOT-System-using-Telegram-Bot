@@ -1,4 +1,4 @@
-# IoT Alert System Using Telegram Bot
+# Telegram-IoT-Alert
 
 
 This system integrates motion detection and temperature monitoring to demonstrate practical IoT communication.
