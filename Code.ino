@@ -15,14 +15,15 @@ const char* password="Add your password here";
 #define CHAT_ID "CHat ID"
 
 WiFiClientSecure client;
-UniversalTelegramBot bot(BOTtokenValue,client);
+UniversalTelegramBot bot(BOTtoken,client);
 
 const int mSensor=12;
 const int TempSensor=34; 
 
 bool mDetected=false; 
+int TempValue;
 
-void IRAM_ATTAR movementdetection(){
+void IRAM_ATTR movementdetection(){
   Serial.println("Motion has been detected!");
   mDetected=true;
 }
@@ -37,11 +38,11 @@ void setup() {
   Serial.print("Trying to connect to WiFi:");
   Serial.println(ssid);
   WiFi.mode(WIFI_STA);
-  WiFI.begin(ssid,password);
-  client.setCACert(TELEGRM_CERTIFICTE_ROOT);
+  WiFi.begin(ssid,password);
+  client.setCACert(TELEGRM_CERTIFICATE_ROOT);
 
 while(WiFi.status()!=WL_CONNECTED){
-  serial.print(".");
+  Serial.print(".");
   delay(300);
 }
 Serial.println("");
@@ -49,7 +50,7 @@ Serial.println("WIFI CONNECTED");
 Serial.print("IR Address");
 Serial.println(WiFi.localIP());
 
-bot.sendMessage(OUR_CHAT_ID,"Motion n Temperture Bot started Up ");
+bot.sendMessage(CHAT_ID,"Motion n Temperture Bot started Up ");
 
 }
 
